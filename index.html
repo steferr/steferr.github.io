@@ -22,6 +22,7 @@
     <script>
     var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
     var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+    var devicePixelRatio = window.devicePixelRatio;
     </script>
   </head>
   <body>
@@ -29,7 +30,7 @@
     <!-- <div style="width: 1000px; height: 100px;">1000*100px</div> -->
     <div id="log"></div>
   <script>
-    document.getElementById("log").innerHTML = '<p style="text-align: center">Viewport: '+w+'x'+ h+'</p>';
+    document.getElementById("log").innerHTML = '<p style="text-align: center">Viewport: '+w+'x'+ h+'</p><p style="text-align: center">window.devicePixelRatio: '+devicePixelRatio+'</p>';
   </script>
   </body>
 
