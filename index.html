@@ -22,7 +22,13 @@
     <script>
     var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
     var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+    var clientWidth = document.documentElement.clientWidth;
+    var clientHeight = document.documentElement.clientHeight;
+    var innerWidth = window.innerWidth;
+    var innerHeight = window.innerHeight;
     var devicePixelRatio = window.devicePixelRatio;
+    var screenWidth = screen.width;
+    var screenHeight = screen.height;
     </script>
   </head>
   <body>
@@ -30,7 +36,14 @@
     <!-- <div style="width: 1000px; height: 100px;">1000*100px</div> -->
     <div id="log"></div>
   <script>
-    document.getElementById("log").innerHTML = '<p style="text-align: center">Viewport: '+w+'x'+ h+'</p><p style="text-align: center">window.devicePixelRatio: '+devicePixelRatio+'</p>';
+    document.getElementById("log").innerHTML = "<p style='text-align: center'>Viewport: "+w+"x"+ h+
+    "</p><p style='text-align: center'>window.devicePixelRatio: "+devicePixelRatio+"</p>"+
+    "</p><p style='text-align: center'>clientWidth: "+clientWidth+"</p>"+
+    "</p><p style='text-align: center'>innerWidth: "+innerWidth+"</p>"+
+    "</p><p style='text-align: center'>screenWidth: "+screenWidth+"</p>"+
+    "</p><p style='text-align: center'>clientHeight: "+clientHeight+"</p>"+
+    "</p><p style='text-align: center'>innerHeight: "+innerHeight+"</p>"+
+    "</p><p style='text-align: center'>screenHeight: "+screenHeight+"</p>";
   </script>
   </body>
 
