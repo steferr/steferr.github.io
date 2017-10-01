@@ -21813,63 +21813,56 @@
 	    key: 'render',
 	    value: function render() {
 	      // console.log(window.innerHeight);
-	      var altezzaHeader = 60 + 80 + 72;
-	      // let {'cacca', 'pipi', {key1: 1, key2: 2}} = this.eventPreviousValues;
-	      // console.log('merda');
 	      return _react2.default.createElement(
 	        'div',
 	        null,
 	        _react2.default.createElement(_nav2.default, null),
 	        _react2.default.createElement(
 	          'div',
-	          null,
-	          _react2.default.createElement(_show_cell_container2.default, null)
-	        ),
-	        _react2.default.createElement(
-	          'div',
-	          null,
+	          { className: 'list-group-item col-sm-12' },
 	          _react2.default.createElement(_filters2.default, null)
 	        ),
 	        _react2.default.createElement(
 	          _reactScrollbar2.default,
 	          {
-	            vertical: true,
-	            stopScrollPropagation: false,
 	            style: {
-	              border: '1px solid red',
-	              touchAction: 'manipulation',
-	              display: 'block',
-	              height: '300px',
-	              // position: 'absolute',
-	              // top: '210px',
-	              marginTop: '210px'
-	              // zIndex: '-1',
+	              // height: '100%',
+	              // width: '100%',
+	              border: '1px solid red'
+	              // height: `${window.innerHeight-altezzaHeader}px`,
 	            },
 	            contentStyle: {
 	              width: '3500px'
 	              // height: '300px',
 	            },
-	            horizontalContainerStyle: {
-	              opacity: '.6',
-	              height: '16px',
-	              borderRadius: '100px',
-	              backgroundColor: '#eee',
-	              backdropFilter: 'blur(2px)',
-	              marginRight: '30px',
-	              width: window.innerWidth - 16 * 4 + 'px',
-	              position: 'fixed',
-	              bottom: '16px',
-	              left: '16px'
-	            },
-	            horizontalScrollbarStyle: {
-	              backgroundColor: '#aaa',
-	              borderRadius: '100px',
-	              opacity: '1',
-	              height: '16px'
-	            }
+	            horizontalContainerStyle: horizontalContainerStyle,
+	            horizontalScrollbarStyle: horizontalScrollbarStyle,
+	            vertical: false,
+	            stopScrollPropagation: false
 	          },
-	          _react2.default.createElement(_sort_bar2.default, null),
-	          _react2.default.createElement(_card_list2.default, null)
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'list-group-item col-sm-12' },
+	            _react2.default.createElement(_sort_bar2.default, null)
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            null,
+	            _react2.default.createElement(_show_cell_container2.default, null)
+	          ),
+	          _react2.default.createElement(
+	            _reactScrollbar2.default,
+	            {
+	              style: scrollAreaStyle,
+	              contentStyle: scrollContentStyle,
+	              smoothScrolling: true,
+	              horizontal: false,
+	              verticalContainerStyle: verticalContainerStyle,
+	              verticalScrollbarStyle: verticalScrollbarStyle,
+	              stopScrollPropagation: false
+	            },
+	            _react2.default.createElement(_card_list2.default, null)
+	          )
 	        )
 	      );
 	    }
@@ -21877,50 +21870,75 @@
 
 	  return App;
 	}(_react.Component);
-	// <div style={{ position: 'relative', top: '210px', background: '#F86738', width: '100%', height: '2000px'}}>
-	// </div>
-
-
 	// <SimpleExample></SimpleExample>
-
-	// vertical = { true }
-	// const scrollAreaStyle = {
-	//   // height: '2000px',
-	//   // width: '100%',
-	//
-	//   // height: `${App.state.height-altezzaHeader}px`,
-	//   // overflow: 'hidden',
-	// }
-	//
-	// const scrollContentStyle = {
-	//   // width: '1600px',
-	//
-	// }
-	//
-	// const verticalContainerStyle={
-	// }
-	//
-	// const verticalScrollbarStyle = {
-	// }
-	//
-	// const horizontalContainerStyle={
-	//
-	// }
-	//
-	// const horizontalScrollbarStyle = {
-	//
-	// }
-
-
-	// <h4>hide </h4>
-	// <div style={{display: 'flex'}}>
-	// <ButtonFilterCategory categoria='development'/>
-	// <ButtonFilterCategory categoria='action'/>
-	// <ButtonFilterCategory categoria='comedy'/>
-	// </div>
 
 
 	exports.default = App;
+	var altezzaHeader = 60 + 80 + 72;
+	// vertical = { true }
+	var scrollAreaStyle = {
+	  // height: '2000px',
+	  // width: '100%',
+	  background: 'grey',
+	  border: '1px solid blue',
+	  height: window.innerHeight - altezzaHeader + 'px'
+	  // height: `${App.state.height-altezzaHeader}px`,
+	  // overflow: 'hidden',
+	};
+
+	var scrollContentStyle = {
+	  // width: '1600px',
+	  height: '2000px',
+	  backgroundColor: '#f4f4f4'
+	};
+
+	var verticalContainerStyle = {
+	  position: 'fixed',
+	  top: altezzaHeader + 16 + 'px', //h nav, filters, SortBar + 16px margin
+	  right: '16px',
+	  // height: '500px',
+	  height: window.innerHeight - altezzaHeader - 32 + 'px',
+	  opacity: '.6',
+	  width: '16px',
+	  borderRadius: '100px',
+	  backgroundColor: '#eee',
+	  backdropFilter: 'blur(2px)'
+	};
+
+	var verticalScrollbarStyle = {
+	  backgroundColor: '#aaa',
+	  borderRadius: '100px',
+	  opacity: '1',
+	  width: '16px'
+	};
+
+	var horizontalContainerStyle = {
+	  opacity: '.6',
+	  height: '16px',
+	  borderRadius: '100px',
+	  backgroundColor: '#eee',
+	  backdropFilter: 'blur(2px)',
+	  marginRight: '30px',
+	  width: window.innerWidth - 16 * 4 + 'px',
+	  position: 'fixed',
+	  bottom: '16px',
+	  left: '16px'
+	};
+
+	var horizontalScrollbarStyle = {
+	  backgroundColor: '#aaa',
+	  borderRadius: '100px',
+	  opacity: '1',
+	  height: '16px'
+
+	  // <h4>hide </h4>
+	  // <div style={{display: 'flex'}}>
+	  // <ButtonFilterCategory categoria='development'/>
+	  // <ButtonFilterCategory categoria='action'/>
+	  // <ButtonFilterCategory categoria='comedy'/>
+	  // </div>
+
+	};
 
 /***/ }),
 /* 200 */
@@ -26774,32 +26792,20 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	// onTouchStart={this.handleTouchStart.bind(this)}
 	var Nav = function Nav(props) {
-	  // let {cacca} = {tette: 'culo', merda: 'vagina'}
-	  // console.log(cacca);
-	  // onTouchStart = {(e)=>{console.log('start')}}
-	  // onTouchEnd = {(e)=>{console.log(e)}}
-	  // onTouchMove = {(e)=>{console.log('move')}}
-	  // onTouchMove = {(e)=>{console.log(e)}}
 	  return _react2.default.createElement(
 	    'div',
 	    { style: {
 	        display: 'flex',
 	        justifyContent: 'space-between',
 	        alignItems: 'center',
-	        position: 'fixed',
-	        top: '0px',
-	        // left: '0px',
-	        width: '90%',
 	        height: '60px',
-	        background: '#21252B'
-	        // padding: '0px 16px', //problemi con paddinx dx
-	      }
-	    },
+	        background: 'red',
+	        padding: '0px 16px'
+	      } },
 	    _react2.default.createElement(
 	      'h3',
-	      { style: { color: '#F6F9FA' } },
+	      null,
 	      'CryptoCardsCompared'
 	    ),
 	    _react2.default.createElement(
@@ -27241,7 +27247,7 @@
 	      return _react2.default.createElement(
 	        'div',
 	        {
-	          style: { height: '2400px' }
+	          style: { width: '800px' }
 	        },
 	        _react2.default.createElement(
 	          'ul',
@@ -27288,8 +27294,6 @@
 	  value: true
 	});
 
-	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 	var _react = __webpack_require__(2);
@@ -27326,59 +27330,12 @@
 	  }
 
 	  _createClass(CardListItem, [{
-	    key: 'handleTouchStart',
-	    value: function handleTouchStart(e) {
-	      var touches = e.touches;
-	      // console.log(e);
-	      // console.log(e.touches);
-	      // console.log(touches[0]);
-	      // let {clientX, clientY} = touches[0];
-	      // console.log(`clientX: ${clientX}`);
-	      // console.log(`clientY: ${clientY}`);
-
-	      var eventPreviousValues = {
-	        clientX: 0,
-	        clientY: 0,
-	        deltaX: 0,
-	        deltaY: 0
-	      };
-
-	      if (touches.length === 1) {
-	        var _touches$ = touches[0],
-	            clientX = _touches$.clientX,
-	            _clientY = _touches$.clientY;
-
-	        eventPreviousValues = _extends({}, eventPreviousValues, {
-	          clientY: _clientY,
-	          clientX: clientX,
-	          timestamp: Date.now()
-	        });
-	      }
-	      var clienteX = eventPreviousValues.clientX;
-	      var clienteY = eventPreviousValues.clientY;
-	      var _eventPreviousValues = eventPreviousValues,
-	          clientiX = _eventPreviousValues.clientiX,
-	          clientY = _eventPreviousValues.clientY;
-
-	      console.log(clientiX);
-	      console.log(clienteX);
-	      console.log(eventPreviousValues);
-	      // var proprrrrrs = {};
-	      // proprrrrrs.foo = 'x';
-	      // proprrrrrs.bar = 'y';
-	      // console.log(proprrrrrs);
-	      // console.log({...proprrrrrs, fart: 'z', timestamp: Date.now()});
-	      // console.log(proprrrrrs, {fart: 'z'});
-	      // console.log(Object.assign(proprrrrrs, {fart: 'z'}));
-	    }
-	  }, {
 	    key: 'render',
 	    value: function render() {
 	      // <Cancellami />
 	      return _react2.default.createElement(
 	        'div',
-	        { style: container, key: this.props.title, onClick: this.props.onClick,
-	          onTouchStart: this.handleTouchStart
+	        { style: container, key: this.props.title, onClick: this.props.onClick
 	        },
 	        _react2.default.createElement(_card_list_item_cell2.default, {
 	          cellType: 'title',
@@ -27744,15 +27701,13 @@
 	}(_react.Component);
 
 	var container = {
-	  display: 'flex',
-	  alignItems: 'center',
-	  justifyContent: 'flex-start',
-	  position: 'fixed',
-	  top: '130px',
 	  cursor: 'pointer',
 	  width: '100%',
 	  height: '72px',
 	  border: '1px solid #e5e5e5',
+	  display: 'flex',
+	  alignItems: 'center',
+	  justifyContent: 'flex-start',
 	  // margin: '8px',
 	  backgroundColor: '#fff',
 	  borderRadius: '4px',
@@ -27870,13 +27825,7 @@
 	var Filters = function Filters(props) {
 	  return _react2.default.createElement(
 	    'div',
-	    { style: {
-	        position: 'fixed',
-	        top: '60px',
-	        height: '80px',
-	        width: '80%',
-	        background: '#282C34'
-	      } },
+	    { style: { height: '80px' } },
 	    _react2.default.createElement(
 	      'h3',
 	      null,
@@ -28034,8 +27983,8 @@
 
 	var showCellContainerStyle = {
 	  position: 'fixed',
-	  bottom: '48px',
-	  right: '48px',
+	  bottom: '20px',
+	  right: '20px',
 	  backgroundColor: '#fff',
 	  border: '1px solid #eee',
 	  padding: '20px'
