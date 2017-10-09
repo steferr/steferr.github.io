@@ -1,0 +1,44 @@
+/*@import './scroll-area"*/
+
+/*@import "simple-area";*/
+
+* {
+  margin: 0;
+  /*overflow: hidden;*/
+  font-family: 'Poppins', sans-serif;
+  color: #19243B;
+  /*color: blue;*/
+  /*backgroundColor: #f6f9fa;*/
+}
+
+.CardItemOverview {
+  position: -webkit-sticky;
+  position: sticky;
+  left: 0px;
+}
+
+/*.area{
+    margin: 0 auto;
+    width: 300px;
+    height: 300px;
+    background: #e5e5e5;
+
+}*/
+/*.area .content{
+  width: 400px;
+
+}
+
+.area .content .item{
+  background: #82bb95;
+  width: 180px;
+  height: 70px;
+  margin: 10px;
+  float: left;
+  padding: 8px;
+  box-sizing: border-box;
+}*/
+
+/*.area ul{
+  width: 700px;
+}*/

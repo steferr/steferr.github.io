@@ -60,7 +60,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "cca256b532cbe80dd2d2"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "c5f1346c40c17f576c4d"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -30846,7 +30846,7 @@ var CardItemOverview = function (_Component) {
     value: function getCompanyLogo() {
       switch (this.props.company) {
         case o.WIREX:
-          return '../../resources/logo_wirex.svg';
+          return '../../resources/logo_Wirex.svg';
       }
       // console.log('wirex');
       // return "../../resources/logo_Wirex.svg"
