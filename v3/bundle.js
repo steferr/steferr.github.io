@@ -60,7 +60,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "c5f1346c40c17f576c4d"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "847b99a4f5fcca2aedcd"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -5896,17 +5896,17 @@ var _icArrowDropDown18px2 = _interopRequireDefault(_icArrowDropDown18px);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var _ref = _jsx('div', {}, void 0, _jsx('img', {
-  src: '../../resources/ic-arrow-drop-down-18px.svg',
+  src: '../../resources/icons/ic-arrow-drop-down-18px.svg',
   alt: ''
 }));
 
 var _ref2 = _jsx('div', {}, void 0, _jsx('img', {
-  src: '../../resources/ic-arrow-drop-up-18px.svg',
+  src: '../../resources/icons/ic-arrow-drop-up-18px.svg',
   alt: ''
 }));
 
 var _ref3 = _jsx('img', {
-  src: '../../resources/ic-arrow-drop-down-18px.svg',
+  src: '../../resources/icons/ic-arrow-drop-down-18px.svg',
   alt: ''
 });
 
@@ -27606,7 +27606,7 @@ var Nav = function Nav(props) {
       // padding: '0px 16px', //problemi con paddinx dx
     }
   }, void 0, _jsx('img', {
-    src: '../../resources/logo_cccompare.svg',
+    src: '../../resources/images/logo_cccompare.svg',
     alt: 'Crypto Cards Compared',
     style: { marginLeft: '16px' }
   }), _jsx('div', {
@@ -29457,7 +29457,19 @@ SortBarItem1.propTypes = {
 "use strict";
 
 
-module.exports = __webpack_require__.p + "ic-arrow-drop-down-18px.svg";
+var _jsx = function () { var REACT_ELEMENT_TYPE = typeof Symbol === "function" && Symbol.for && Symbol.for("react.element") || 0xeac7; return function createRawReactElement(type, props, key, children) { var defaultProps = type && type.defaultProps; var childrenLength = arguments.length - 3; if (!props && childrenLength !== 0) { props = {}; } if (props && defaultProps) { for (var propName in defaultProps) { if (props[propName] === void 0) { props[propName] = defaultProps[propName]; } } } else if (!props) { props = defaultProps || {}; } if (childrenLength === 1) { props.children = children; } else if (childrenLength > 1) { var childArray = Array(childrenLength); for (var i = 0; i < childrenLength; i++) { childArray[i] = arguments[i + 3]; } props.children = childArray; } return { $$typeof: REACT_ELEMENT_TYPE, type: type, key: key === undefined ? null : '' + key, ref: null, props: props, _owner: null }; }; }();
+
+_jsx("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: "18",
+    height: "18",
+    viewBox: "0 0 18 18"
+}, void 0, _jsx("path", {
+    d: "M5 8l4 4 4-4z"
+}), _jsx("path", {
+    d: "M0 0h18v18H0z",
+    fill: "none"
+}));
 
 /***/ }),
 /* 275 */
@@ -30846,17 +30858,17 @@ var CardItemOverview = function (_Component) {
     value: function getCompanyLogo() {
       switch (this.props.company) {
         case o.WIREX:
-          return '../../resources/logo_Wirex.svg';
+          return '../../resources/images/logo_Wirex.svg';
       }
       // console.log('wirex');
-      // return "../../resources/logo_Wirex.svg"
+      // return "../../resources/images/logo_Wirex.svg"
     }
   }, {
     key: 'getCardIssuerLogo',
     value: function getCardIssuerLogo() {
       switch (this.props.cardIssuer) {
         case o.MASTERCARD:
-          return '../../resources/logo_mastercard.svg';
+          return '../../resources/images/logo_mastercard.svg';
       }
     }
   }, {
