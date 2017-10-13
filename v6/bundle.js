@@ -60,7 +60,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "9a9af4181712c3de5dd7"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "71100c97e23f1d19af6b"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -1607,6 +1607,25 @@ module.exports = ReactDOMComponentTree;
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_Provider__ = __webpack_require__(250);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_connectAdvanced__ = __webpack_require__(120);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__connect_connect__ = __webpack_require__(253);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Provider", function() { return __WEBPACK_IMPORTED_MODULE_0__components_Provider__["b"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "createProvider", function() { return __WEBPACK_IMPORTED_MODULE_0__components_Provider__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "connectAdvanced", function() { return __WEBPACK_IMPORTED_MODULE_1__components_connectAdvanced__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "connect", function() { return __WEBPACK_IMPORTED_MODULE_2__connect_connect__["a"]; });
+
+
+
+
+
+
+/***/ }),
+/* 10 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* WEBPACK VAR INJECTION */(function(process) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__createStore__ = __webpack_require__(122);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__combineReducers__ = __webpack_require__(268);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__bindActionCreators__ = __webpack_require__(269);
@@ -1637,25 +1656,6 @@ if (process.env.NODE_ENV !== 'production' && typeof isCrushed.name === 'string' 
 
 
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(0)))
-
-/***/ }),
-/* 10 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_Provider__ = __webpack_require__(250);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_connectAdvanced__ = __webpack_require__(120);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__connect_connect__ = __webpack_require__(253);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Provider", function() { return __WEBPACK_IMPORTED_MODULE_0__components_Provider__["b"]; });
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "createProvider", function() { return __WEBPACK_IMPORTED_MODULE_0__components_Provider__["a"]; });
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "connectAdvanced", function() { return __WEBPACK_IMPORTED_MODULE_1__components_connectAdvanced__["a"]; });
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "connect", function() { return __WEBPACK_IMPORTED_MODULE_2__connect_connect__["a"]; });
-
-
-
-
-
 
 /***/ }),
 /* 11 */
@@ -2414,6 +2414,47 @@ module.exports = invariant;
 "use strict";
 
 
+exports.__esModule = true;
+
+function _interopRequire(obj) { return obj && obj.__esModule ? obj['default'] : obj; }
+
+var _Motion = __webpack_require__(319);
+
+exports.Motion = _interopRequire(_Motion);
+
+var _StaggeredMotion = __webpack_require__(321);
+
+exports.StaggeredMotion = _interopRequire(_StaggeredMotion);
+
+var _TransitionMotion = __webpack_require__(322);
+
+exports.TransitionMotion = _interopRequire(_TransitionMotion);
+
+var _spring = __webpack_require__(324);
+
+exports.spring = _interopRequire(_spring);
+
+var _presets = __webpack_require__(144);
+
+exports.presets = _interopRequire(_presets);
+
+var _stripStyle = __webpack_require__(51);
+
+exports.stripStyle = _interopRequire(_stripStyle);
+
+// deprecated, dummy warning function
+
+var _reorderKeys = __webpack_require__(325);
+
+exports.reorderKeys = _interopRequire(_reorderKeys);
+
+/***/ }),
+/* 19 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
@@ -2496,47 +2537,6 @@ var buttonFiltersActiveStyle = exports.buttonFiltersActiveStyle = Object.assign(
 var buttonHoverStyle = exports.buttonHoverStyle = {
   backgroundColor: _constants.PRIMARY_DARKER
 };
-
-/***/ }),
-/* 19 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-exports.__esModule = true;
-
-function _interopRequire(obj) { return obj && obj.__esModule ? obj['default'] : obj; }
-
-var _Motion = __webpack_require__(319);
-
-exports.Motion = _interopRequire(_Motion);
-
-var _StaggeredMotion = __webpack_require__(321);
-
-exports.StaggeredMotion = _interopRequire(_StaggeredMotion);
-
-var _TransitionMotion = __webpack_require__(322);
-
-exports.TransitionMotion = _interopRequire(_TransitionMotion);
-
-var _spring = __webpack_require__(324);
-
-exports.spring = _interopRequire(_spring);
-
-var _presets = __webpack_require__(144);
-
-exports.presets = _interopRequire(_presets);
-
-var _stripStyle = __webpack_require__(51);
-
-exports.stripStyle = _interopRequire(_stripStyle);
-
-// deprecated, dummy warning function
-
-var _reorderKeys = __webpack_require__(325);
-
-exports.reorderKeys = _interopRequire(_reorderKeys);
 
 /***/ }),
 /* 20 */
@@ -4937,9 +4937,9 @@ var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactRedux = __webpack_require__(10);
+var _reactRedux = __webpack_require__(9);
 
-var _redux = __webpack_require__(9);
+var _redux = __webpack_require__(10);
 
 var _index = __webpack_require__(13);
 
@@ -6561,11 +6561,11 @@ var _propTypes = __webpack_require__(5);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _reactMotion = __webpack_require__(19);
+var _reactMotion = __webpack_require__(18);
 
 var _animations = __webpack_require__(38);
 
-var _styles = __webpack_require__(18);
+var _styles = __webpack_require__(19);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -9170,15 +9170,15 @@ var _propTypes = __webpack_require__(5);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _redux = __webpack_require__(9);
+var _redux = __webpack_require__(10);
 
-var _reactRedux = __webpack_require__(10);
+var _reactRedux = __webpack_require__(9);
 
 var _index = __webpack_require__(13);
 
-var _reactMotion = __webpack_require__(19);
+var _reactMotion = __webpack_require__(18);
 
-var _styles = __webpack_require__(18);
+var _styles = __webpack_require__(19);
 
 var _constants = __webpack_require__(3);
 
@@ -16314,9 +16314,9 @@ var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactRedux = __webpack_require__(10);
+var _reactRedux = __webpack_require__(9);
 
-var _redux = __webpack_require__(9);
+var _redux = __webpack_require__(10);
 
 var _index = __webpack_require__(13);
 
@@ -16324,7 +16324,7 @@ var _FilterItem = __webpack_require__(80);
 
 var _FilterItem2 = _interopRequireDefault(_FilterItem);
 
-var _styles = __webpack_require__(18);
+var _styles = __webpack_require__(19);
 
 var _constants = __webpack_require__(3);
 
@@ -16334,7 +16334,7 @@ var _ClosePanelButton = __webpack_require__(52);
 
 var _ClosePanelButton2 = _interopRequireDefault(_ClosePanelButton);
 
-var _reactMotion = __webpack_require__(19);
+var _reactMotion = __webpack_require__(18);
 
 var _FiltersExpanded = __webpack_require__(328);
 
@@ -16437,7 +16437,7 @@ var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactRedux = __webpack_require__(10);
+var _reactRedux = __webpack_require__(9);
 
 var _HiddenColumnsItem = __webpack_require__(147);
 
@@ -16459,13 +16459,13 @@ var _HiddenColumnsExpanded2 = _interopRequireDefault(_HiddenColumnsExpanded);
 
 var _index = __webpack_require__(13);
 
-var _redux = __webpack_require__(9);
+var _redux = __webpack_require__(10);
 
-var _reactMotion = __webpack_require__(19);
+var _reactMotion = __webpack_require__(18);
 
 var _animations = __webpack_require__(38);
 
-var _styles = __webpack_require__(18);
+var _styles = __webpack_require__(19);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -16605,9 +16605,9 @@ var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactRedux = __webpack_require__(10);
+var _reactRedux = __webpack_require__(9);
 
-var _redux = __webpack_require__(9);
+var _redux = __webpack_require__(10);
 
 var _index = __webpack_require__(13);
 
@@ -16683,9 +16683,9 @@ var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactRedux = __webpack_require__(10);
+var _reactRedux = __webpack_require__(9);
 
-var _redux = __webpack_require__(9);
+var _redux = __webpack_require__(10);
 
 var _index = __webpack_require__(13);
 
@@ -16695,7 +16695,7 @@ var _propTypes2 = _interopRequireDefault(_propTypes);
 
 var _constants = __webpack_require__(3);
 
-var _styles = __webpack_require__(18);
+var _styles = __webpack_require__(19);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -16798,7 +16798,7 @@ var _createReactClass = __webpack_require__(344);
 
 var _createReactClass2 = _interopRequireDefault(_createReactClass);
 
-var _reactMotion = __webpack_require__(19);
+var _reactMotion = __webpack_require__(18);
 
 var _react = __webpack_require__(1);
 
@@ -17138,7 +17138,7 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactDom = __webpack_require__(30);
 
-var _reactRedux = __webpack_require__(10);
+var _reactRedux = __webpack_require__(9);
 
 var _reactRouterRedux = __webpack_require__(47);
 
@@ -28598,7 +28598,7 @@ function shallowEqual(objA, objB) {
 /* unused harmony export whenMapDispatchToPropsIsFunction */
 /* unused harmony export whenMapDispatchToPropsIsMissing */
 /* unused harmony export whenMapDispatchToPropsIsObject */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_redux__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_redux__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__wrapMapToProps__ = __webpack_require__(126);
 
 
@@ -31011,7 +31011,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.history = undefined;
 
-var _redux = __webpack_require__(9);
+var _redux = __webpack_require__(10);
 
 var _reactRouterRedux = __webpack_require__(47);
 
@@ -31113,7 +31113,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _redux = __webpack_require__(9);
+var _redux = __webpack_require__(10);
 
 var _reactRouterRedux = __webpack_require__(47);
 
@@ -34306,11 +34306,11 @@ var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactRedux = __webpack_require__(10);
+var _reactRedux = __webpack_require__(9);
 
 var _index = __webpack_require__(13);
 
-var _redux = __webpack_require__(9);
+var _redux = __webpack_require__(10);
 
 var _nav = __webpack_require__(307);
 
@@ -34600,9 +34600,9 @@ var _reactRouterDom = __webpack_require__(141);
 
 var _reactRouterRedux = __webpack_require__(47);
 
-var _redux = __webpack_require__(9);
+var _redux = __webpack_require__(10);
 
-var _reactRedux = __webpack_require__(10);
+var _reactRedux = __webpack_require__(9);
 
 var _FilterItem = __webpack_require__(80);
 
@@ -34614,7 +34614,7 @@ var _ButtonPrimary2 = _interopRequireDefault(_ButtonPrimary);
 
 var _constants = __webpack_require__(3);
 
-var _styles = __webpack_require__(18);
+var _styles = __webpack_require__(19);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -36660,7 +36660,7 @@ var _react2 = _interopRequireDefault(_react);
 
 var _constants = __webpack_require__(3);
 
-var _styles = __webpack_require__(18);
+var _styles = __webpack_require__(19);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -36774,9 +36774,9 @@ var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactRedux = __webpack_require__(10);
+var _reactRedux = __webpack_require__(9);
 
-var _redux = __webpack_require__(9);
+var _redux = __webpack_require__(10);
 
 var _index = __webpack_require__(13);
 
@@ -36784,7 +36784,7 @@ var _FilterItem = __webpack_require__(80);
 
 var _FilterItem2 = _interopRequireDefault(_FilterItem);
 
-var _styles = __webpack_require__(18);
+var _styles = __webpack_require__(19);
 
 var _constants = __webpack_require__(3);
 
@@ -36794,7 +36794,7 @@ var _ClosePanelButton = __webpack_require__(52);
 
 var _ClosePanelButton2 = _interopRequireDefault(_ClosePanelButton);
 
-var _reactMotion = __webpack_require__(19);
+var _reactMotion = __webpack_require__(18);
 
 var _animations = __webpack_require__(38);
 
@@ -37159,7 +37159,7 @@ var _constants = __webpack_require__(3);
 
 var o = _interopRequireWildcard(_constants);
 
-var _styles = __webpack_require__(18);
+var _styles = __webpack_require__(19);
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
@@ -37449,9 +37449,9 @@ var _propTypes = __webpack_require__(5);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _reactRedux = __webpack_require__(10);
+var _reactRedux = __webpack_require__(9);
 
-var _redux = __webpack_require__(9);
+var _redux = __webpack_require__(10);
 
 var _index = __webpack_require__(13);
 
@@ -37575,9 +37575,9 @@ var _propTypes = __webpack_require__(5);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _reactRedux = __webpack_require__(10);
+var _reactRedux = __webpack_require__(9);
 
-var _redux = __webpack_require__(9);
+var _redux = __webpack_require__(10);
 
 var _index = __webpack_require__(13);
 
@@ -37692,9 +37692,9 @@ var _propTypes = __webpack_require__(5);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _reactRedux = __webpack_require__(10);
+var _reactRedux = __webpack_require__(9);
 
-var _redux = __webpack_require__(9);
+var _redux = __webpack_require__(10);
 
 var _index = __webpack_require__(13);
 
@@ -37836,9 +37836,9 @@ var _propTypes = __webpack_require__(5);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _reactRedux = __webpack_require__(10);
+var _reactRedux = __webpack_require__(9);
 
-var _redux = __webpack_require__(9);
+var _redux = __webpack_require__(10);
 
 var _index = __webpack_require__(13);
 
@@ -37991,11 +37991,11 @@ var _reactDom = __webpack_require__(30);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-var _reactRedux = __webpack_require__(10);
+var _reactRedux = __webpack_require__(9);
 
 var _index = __webpack_require__(13);
 
-var _redux = __webpack_require__(9);
+var _redux = __webpack_require__(10);
 
 var _CardListItem = __webpack_require__(337);
 
@@ -38003,7 +38003,9 @@ var _CardListItem2 = _interopRequireDefault(_CardListItem);
 
 var _constants = __webpack_require__(3);
 
-var _styles = __webpack_require__(18);
+var _styles = __webpack_require__(19);
+
+var _reactMotion = __webpack_require__(18);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -38012,6 +38014,46 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+//
+// import createReactClass from 'create-react-class';
+//
+// const Demo = createReactClass({
+//   getInitialState() {
+//     return {
+//       items: [{key: 'a', size: 10}, {key: 'b', size: 20}, {key: 'c', size: 30}],
+//     };
+//   },
+//   componentDidMount() {
+//     this.setState({
+//       items: [{key: 'a', size: 10}, {key: 'b', size: 20}], // remove c.
+//     });
+//   },
+//   willLeave() {
+//     // triggered when c's gone. Keeping c until its width/height reach 0.
+//     return {width: spring(0), height: spring(0)};
+//   },
+//   render() {
+//     return (
+//       <TransitionMotion
+//         willLeave={this.willLeave}
+//         styles={this.state.items.map(item => ({
+//           key: item.key,
+//           style: {width: item.size, height: item.size},
+//         }))}>
+//         {interpolatedStyles =>
+//           // first render: a, b, c. Second: still a, b, c! Only last one's a, b.
+//           <div>
+//             {interpolatedStyles.map(config => {
+//               return <div key={config.key} style={{...config.style, border: '1px solid'}} />
+//             })}
+//           </div>
+//         }
+//       </TransitionMotion>
+//     );
+//   },
+// });
+
 
 var CardList = function (_Component) {
   _inherits(CardList, _Component);
@@ -38023,47 +38065,21 @@ var CardList = function (_Component) {
   }
 
   _createClass(CardList, [{
+    key: 'willLeave',
+    value: function willLeave() {
+      return { height: (0, _reactMotion.spring)(0), opacity: (0, _reactMotion.spring)(0) };
+    }
+  }, {
     key: 'renderList',
-
-    //  - - - - RENDER LIST FUNCTIONING - - - -
-    // renderList() {
-    //   // console.log('- - - - cardList - - - ');
-    //   return this.props.visibleCards.map((card, index) => {
-    //     // console.log(card.cardID);
-    //     // if (this.props.hiddenColumns.indexOf(card.columnID) == -1) {
-    //       return (
-    //         <CardListItem
-    //           key = { card.cardID }
-    //           card = {card}
-    //           isEven = { index % 2 == 0 }
-    //         />
-    //       // )
-    //     }
-    //     else
-    //       return (<div key = {card.cardID}></div>)
-    //   })
-    // }
-
-    //  - - - - RENDER LIST TEST - - - -
     value: function renderList() {
       var _this2 = this;
 
-      var visibleCardsIDs = [];
-      for (var i = 0; i < this.props.visibleCards.length; i++) {
-        visibleCardsIDs.push(this.props.visibleCards[i]['cardID']);
-      }
-      // console.log(visibleCardsIDs);
-      // console.log('- - - - cardList - - - ');
-      return this.props.cardList.map(function (card, index) {
-        // console.log(card.cardID);
-        // console.log(this.props.visibleCards);
-        // const isMounted = this.props.visibleCards['cardID'].includes(card.cardID)
-        // console.log(visibleCardsIDs.includes(card.cardID));
+      return this.props.visibleCards.map(function (card, index) {
+        // console.log(card);
         if (_this2.props.hiddenColumns.indexOf(card.columnID) == -1) {
           return _jsx(_CardListItem2.default, {
             card: card,
-            isEven: index % 2 == 0,
-            isMounted: visibleCardsIDs.includes(card.cardID)
+            isEven: index % 2 == 0
           }, card.cardID);
         } else return _jsx('div', {}, card.cardID);
       });
@@ -38073,25 +38089,41 @@ var CardList = function (_Component) {
     value: function render() {
       return _jsx('div', {
         style: {
-          // height: '2400px',
           width: '3896px',
-          // marginRight:'16px',
           marginBottom: (0, _styles.getHeightFilterExpanded)(this.props.windowSize.width) + 32 + 'px',
           position: 'relative',
-          // top: '132px',
           zIndex: '-1',
           backgroundColor: _constants.GREY_LIGHT
         }
       }, void 0, _jsx('ul', {
-        style: {
-          padding: 0
-        }
-      }, void 0, this.renderList()));
+        style: { padding: 0 }
+      }, void 0, _jsx(_reactMotion.TransitionMotion, {
+        willLeave: this.willLeave,
+        styles: this.props.visibleCards.map(function (card, index) {
+          return {
+            key: card.cardID,
+            data: { index: index },
+            style: { height: 80, opacity: 1 }
+          };
+        })
+      }, void 0, function (interpolatedStyles) {
+        return _jsx('div', {}, void 0, interpolatedStyles.map(function (config) {
+          // console.log(config.key);
+          return _jsx(_CardListItem2.default, {
+            cardId: config.key,
+            isEven: config.data.index % 2 == 0,
+            style: config.style
+          }, config.key);
+        }));
+      })));
     }
   }]);
 
   return CardList;
 }(_react.Component);
+// <div key={config.key} style={{...config.style, border: '1px solid', backgroundColor: '#FBB43D'}} />
+// {this.renderList()}
+
 
 function mapStateToProps(state) {
   return {
@@ -38118,8 +38150,10 @@ Object.defineProperty(exports, "__esModule", {
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 var _jsx = function () { var REACT_ELEMENT_TYPE = typeof Symbol === "function" && Symbol.for && Symbol.for("react.element") || 0xeac7; return function createRawReactElement(type, props, key, children) { var defaultProps = type && type.defaultProps; var childrenLength = arguments.length - 3; if (!props && childrenLength !== 0) { props = {}; } if (props && defaultProps) { for (var propName in defaultProps) { if (props[propName] === void 0) { props[propName] = defaultProps[propName]; } } } else if (!props) { props = defaultProps || {}; } if (childrenLength === 1) { props.children = children; } else if (childrenLength > 1) { var childArray = Array(childrenLength); for (var i = 0; i < childrenLength; i++) { childArray[i] = arguments[i + 3]; } props.children = childArray; } return { $$typeof: REACT_ELEMENT_TYPE, type: type, key: key === undefined ? null : '' + key, ref: null, props: props, _owner: null }; }; }();
+// import { bindActionCreators } from 'redux';
 
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+// import {WORD, PARAGRAPH, NUMBER, PRICE, TIME, TICK} from '../utilities/constants'
+
 
 var _react = __webpack_require__(1);
 
@@ -38129,11 +38163,9 @@ var _reactDom = __webpack_require__(30);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-var _reactRedux = __webpack_require__(10);
+var _reactRedux = __webpack_require__(9);
 
 var _index = __webpack_require__(13);
-
-var _redux = __webpack_require__(9);
 
 var _CardItemDetail = __webpack_require__(338);
 
@@ -38151,460 +38183,396 @@ var _propTypes = __webpack_require__(5);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _reactMotion = __webpack_require__(19);
-
-var _styles = __webpack_require__(18);
-
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-// import {WORD, PARAGRAPH, NUMBER, PRICE, TIME, TICK} from '../utilities/constants'
+// import ButtonFilterCategory from '../containers/button_filter_category'
 
 
-var CardListItem = function (_Component) {
-  _inherits(CardListItem, _Component);
+// <CardItemDetail
+// cellClass={'cardIssuer'}
+// columnID = uguale ad una delle costanti
+// contentType={WORD}
+// content={props.cardIssuer}
+// visible={true}
+// style={Object.assign({}, interni, pagine)}
+// />
 
-  function CardListItem() {
-    _classCallCheck(this, CardListItem);
+var CardListItem = function CardListItem(props) {
 
-    return _possibleConstructorReturn(this, (CardListItem.__proto__ || Object.getPrototypeOf(CardListItem)).apply(this, arguments));
-  }
+  var getCard = function getCard() {
+    var c = {};
+    props.cardList.map(function (card) {
+      if (card.cardID === props.cardId) c = card;
+    });
+    return c;
+  };
+  var card = getCard();
 
-  _createClass(CardListItem, [{
-    key: 'getContent_PREPAID_OR_INSTANT_CRYPTO',
-    value: function getContent_PREPAID_OR_INSTANT_CRYPTO() {
-      if (this.props.card.instantCryptoPayment) return 'Instant Crypto Payment';else return 'Prepaid Card';
-    }
-  }, {
-    key: 'getContent_VERIFICATION_TYPE',
-    value: function getContent_VERIFICATION_TYPE() {
-      // var array = this.props.card.verificationType
-      var card = this.props.card;
-      if (!card.isVerificationRequired) return 'not required';
-      if (card.proofOfAddressRequired && card.proofOfIdentityRequired) return 'P. of Identity & P.of Address';
-      if (!card.proofOfAddressRequired && card.proofOfIdentityRequired) return 'Proof of Identity';
-      if (card.proofOfAddressRequired && !card.proofOfIdentityRequired) return 'Proof of Address';
-    }
-  }, {
-    key: 'getContent_APP',
-    value: function getContent_APP() {
-      if (this.props.card.app_IOS) {
-        if (this.props.card.app_Android) {
-          if (this.props.card.app_Web) {
-            return 'iOS, Android, Web App';
-          } else return 'iOS, Android';
-        } else {
-          if (this.props.card.app_Web) {
-            return 'iOS, Web App';
-          } else return 'iOS';
-        }
+  // console.log(card);
+
+  var getContent_PREPAID_OR_INSTANT_CRYPTO = function getContent_PREPAID_OR_INSTANT_CRYPTO(card) {
+    if (card.instantCryptoPayment) return 'Instant Crypto Payment';else return 'Prepaid Card';
+  };
+  var getContent_VERIFICATION_TYPE = function getContent_VERIFICATION_TYPE(card) {
+    console.log(card);
+    if (!card.isVerificationRequired) return 'not required';
+    if (card.proofOfAddressRequired && card.proofOfIdentityRequired) return 'P. of Identity & P.of Address';
+    if (!card.proofOfAddressRequired && card.proofOfIdentityRequired) return 'Proof of Identity';
+    if (card.proofOfAddressRequired && !card.proofOfIdentityRequired) return 'Proof of Address';
+  };
+  var getContent_APP = function getContent_APP(card) {
+    if (card.app_IOS) {
+      if (card.app_Android) {
+        if (card.app_Web) {
+          return 'iOS, Android, Web App';
+        } else return 'iOS, Android';
       } else {
-        if (this.props.card.app_Android) {
-          if (this.props.card.app_Web) {
-            return 'Android, Web App';
-          } else return 'Android';
-        } else return 'Web App';
+        if (card.app_Web) {
+          return 'iOS, Web App';
+        } else return 'iOS';
       }
+    } else {
+      if (card.app_Android) {
+        if (card.app_Web) {
+          return 'Android, Web App';
+        } else return 'Android';
+      } else return 'Web App';
     }
-  }, {
-    key: 'getContent_CONNECTED_WALLETS',
-    value: function getContent_CONNECTED_WALLETS(wallets) {
-      var content = wallets[0];
-      for (var i = 1; i < wallets.length; i++) {
-        content = content + ', ' + wallets[i];
-      }
-      return content;
+  };
+  var getContent_CONNECTED_WALLETS = function getContent_CONNECTED_WALLETS(wallets) {
+    var content = wallets[0];
+    for (var i = 1; i < wallets.length; i++) {
+      content = content + ', ' + wallets[i];
     }
-  }, {
-    key: 'getContent_WALLETLOAD_TYPES',
-    value: function getContent_WALLETLOAD_TYPES(card, bankAccount, paypal, skrill, payeer) {
-      if (card == false) var n_card = '';else var n_card = 'Credit Card, ';
-      if (bankAccount == false) var n_bankAccount = '';else var n_bankAccount = 'Bank Account, ';
-      if (paypal == false) var n_paypal = '';else var n_paypal = 'Paypal, ';
-      if (skrill == false) var n_skrill = '';
-      var n_skrill = 'Skrill, ';
-      if (payeer == false) var n_payeer = '';else var n_payeer = 'Payeer';
+    return content;
+  };
+  var getContent_WALLETLOAD_TYPES = function getContent_WALLETLOAD_TYPES(card, bankAccount, paypal, skrill, payeer) {
+    if (card == false) var n_card = '';else var n_card = 'Credit Card, ';
+    if (bankAccount == false) var n_bankAccount = '';else var n_bankAccount = 'Bank Account, ';
+    if (paypal == false) var n_paypal = '';else var n_paypal = 'Paypal, ';
+    if (skrill == false) var n_skrill = '';
+    var n_skrill = 'Skrill, ';
+    if (payeer == false) var n_payeer = '';else var n_payeer = 'Payeer';
 
-      return '' + n_card + n_bankAccount + n_paypal + n_skrill + n_payeer;
+    return '' + n_card + n_bankAccount + n_paypal + n_skrill + n_payeer;
+  };
+  var formatPrice = function formatPrice(price) {
+    var formattedPrice = price;
+    if (price.includes('∞')) {
+      formattedPrice = '∞';
     }
-  }, {
-    key: 'formatPrice',
-    value: function formatPrice(price) {
-      var formattedPrice = price;
-      if (price.includes('∞')) {
-        formattedPrice = '∞';
-      }
-      if (price.includes(o.EUR)) {
-        formattedPrice = price.replace(o.EUR, '€ ');
-      }
-      if (price.includes(o.USD)) {
-        formattedPrice = price.replace(o.USD, '$ ');
-      }
-      if (price.includes(o.GBP)) {
-        formattedPrice = price.replace(o.GBP, '£ ');
-      }
-      if (price.includes(o.BTC)) {
-        formattedPrice = price.replace(o.BTC, '₿ ');
-      }
-      return formattedPrice;
+    if (price.includes(o.EUR)) {
+      formattedPrice = price.replace(o.EUR, '€ ');
     }
-  }, {
-    key: 'formatPercentage',
-    value: function formatPercentage(percentage) {
-      if (percentage == 0) return '0 %';
-      return percentage.replace('%', ' %');
+    if (price.includes(o.USD)) {
+      formattedPrice = price.replace(o.USD, '$ ');
     }
-  }, {
-    key: 'formatTick',
-    value: function formatTick(bool) {
-      if (bool) return 'yes';else return 'no';
+    if (price.includes(o.GBP)) {
+      formattedPrice = price.replace(o.GBP, '£ ');
     }
-  }, {
-    key: 'formatTimeSpan',
-    value: function formatTimeSpan(min, max) {
-      return min + ' - ' + max + ' days';
+    if (price.includes(o.BTC)) {
+      formattedPrice = price.replace(o.BTC, '₿ ');
     }
+    return formattedPrice;
+  };
+  var formatPercentage = function formatPercentage(percentage) {
+    if (percentage == 0) return '0 %';
+    return percentage.replace('%', ' %');
+  };
+  var formatTick = function formatTick(bool) {
+    if (bool) return 'yes';else return 'no';
+  };
+  var formatTimeSpan = function formatTimeSpan(min, max) {
+    return min + ' - ' + max + ' days';
+  };
 
-    // isVisible() {
-    //   const visibleCards = this.props.visibleCards
-    //   for (let i=0; i<visibleCards.length; i++) {
-    //     if (visibleCards[i]['cardID'] === this.props.card.cardID)
-    //       return true
-    //   }
-    //   return false
-    // }
+  // console.log(state);
+  // console.log(getContent_PREPAID_OR_INSTANT_CRYPTO);
+  // const card = props.card
+  // const card = props.cardList[props.card]
+  // console.log(props.key);
+  // let mammella = {}
+  // console.log(props.cardId);
+  // console.log(mammella);
+  // console.log(props.cardList.map(card => card.cardID));
+  // console.log(carta);
 
-  }, {
-    key: 'getContent',
-    value: function getContent() {
-      var card = this.props.card;
-      var cardDetailContainerStyle = {
-        display: 'flex',
-        alignItems: 'stretch',
-        justifyContent: 'left',
-        height: '100%',
-        background: this.props.isEven ? _constants.GREY_LIGHT : '#fff'
-      };
-      return _jsx('div', {
-        style: container,
-        onClick: this.props.onClick
-      }, card.cardID, _react2.default.createElement(_CardItemOverview2.default, _extends({
-        cardIssuer: card.cardIssuer,
-        spendingCurrency: card.spendingCurrency,
-        cardName: card.cardName,
-        company: card.company,
-        cardType: card.cardType
-      }, this.props)), _jsx('div', {
-        style: cardDetailContainerStyle
-      }, void 0, _jsx(_CardItemDetail2.default, {
-        columnGroup: o.VERIFICATION_TYPE,
-        columnID: o.VERIFICATION_TYPE,
-        contentType: o.PARAGRAPH,
-        content: this.getContent_VERIFICATION_TYPE(),
-        style: Object.assign({}, interni, categoria),
-        width: 128
-      }), _jsx(_CardItemDetail2.default, {
-        columnGroup: o.CARD_ISSUANCE_PRICE,
-        columnID: o.CARD_ISSUANCE_PRICE,
-        contentType: o.PRICE,
-        content: this.formatPrice(card.cardIssuancePrice),
-        style: Object.assign({}, interni, categoria),
-        width: 128
-      }), _jsx(_CardItemDetail2.default, {
-        columnGroup: o.ANNUAL_COST,
-        columnID: o.ANNUAL_COST,
-        contentType: o.PRICE,
-        content: this.formatPrice(card.annualFee),
-        style: Object.assign({}, interni, categoria),
-        width: 144
-      }), _jsx(_CardItemDetail2.default, {
-        columnGroup: o.CURRENCY_CONVERSION,
-        columnID: o.CURRENCY_CONVERSION,
-        contentType: o.PERCENTAGE,
-        content: this.formatPercentage(card.currencyConversion),
-        style: Object.assign({}, interni, categoria),
-        width: 168
-      }), _jsx(_CardItemDetail2.default, {
-        columnGroup: o.ATM_WITHDRAWAL_FEE,
-        columnID: o.ATM_DOMESTIC_WIDTHRAWAL_FEE,
-        contentType: o.PRICE,
-        content: this.formatPrice(card.ATM_Domestic_Widthrawal_Fee),
-        style: Object.assign({}, interni, categoria),
-        width: 136
-      }), _jsx(_CardItemDetail2.default, {
-        columnGroup: o.ATM_WITHDRAWAL_FEE,
-        columnID: o.ATM_INTERNATIONAL_WITHDRAWAL_FEE,
-        contentType: o.PRICE,
-        content: this.formatPrice(card.ATM_International_Withdrawal_Fee),
-        style: Object.assign({}, interni, categoria),
-        width: 136
-      }), _jsx(_CardItemDetail2.default, {
-        columnGroup: o.CASH_BACK,
-        columnID: o.CASH_BACK,
-        contentType: o.PERCENTAGE,
-        content: this.formatPercentage(card.cashBack),
-        style: Object.assign({}, interni, categoria),
-        width: 136
-      }), _jsx(_CardItemDetail2.default, {
-        columnGroup: o.PIN_CHANGE,
-        columnID: o.PIN_CHANGE,
-        contentType: o.PRICE,
-        content: this.formatPrice(card.pinChange),
-        style: Object.assign({}, interni, categoria),
-        width: 136
-      }), _jsx(_CardItemDetail2.default, {
-        columnGroup: o.APPS,
-        columnID: o.APPS,
-        contentType: o.PARAGRAPH,
-        content: this.getContent_APP(),
-        style: Object.assign({}, interni, categoria),
-        width: 136
-      }), _jsx(_CardItemDetail2.default, {
-        columnGroup: o.TWO_FACTORS_AUTH,
-        columnID: o.TWO_FACTORS_AUTH,
-        contentType: o.TICK,
-        content: this.formatTick(card.twoFactorsAuth),
-        style: Object.assign({}, interni, categoria),
-        width: 136
-      }), _jsx(_CardItemDetail2.default, {
-        columnGroup: o.CARD_DELIVERY_STANDARD,
-        columnID: o.CARD_DELIVERY_STD_TIME,
-        contentType: o.TIME,
-        content: this.formatTimeSpan(card.cardDeliveryStdTimeMin, card.cardDeliveryStdTimeMax),
-        style: Object.assign({}, interni, categoria),
-        width: 84
-      }), _jsx(_CardItemDetail2.default, {
-        columnGroup: o.CARD_DELIVERY_STANDARD,
-        columnID: o.CARD_DELIVERY_STD_PRICE,
-        contentType: o.PRICE,
-        content: this.formatPrice(card.cardDeliveryStdPrice),
-        style: Object.assign({}, interni, categoria),
-        width: 84
-      }), _jsx(_CardItemDetail2.default, {
-        columnGroup: o.CARD_DELIVERY_EXPRESS,
-        columnID: o.CARD_DELIVERY_EXP_TIME,
-        contentType: o.TIME,
-        content: this.formatTimeSpan(card.cardDeliveryExpTimeMin, card.cardDeliveryExpTimeMax),
-        style: Object.assign({}, interni, categoria),
-        width: 84
-      }), _jsx(_CardItemDetail2.default, {
-        columnGroup: o.CARD_DELIVERY_EXPRESS,
-        columnID: o.CARD_DELIVERY_EXP_PRICE,
-        contentType: o.PRICE,
-        content: this.formatPrice(card.cardDeliveryExpPrice),
-        style: Object.assign({}, interni, categoria),
-        width: 84
-      }), _jsx(_CardItemDetail2.default, {
-        columnGroup: o.CARD_REPLACEMENT,
-        columnID: o.CARD_REPLACEMENT_STD_PRICE,
-        contentType: o.PRICE,
-        content: this.formatPrice(card.cardReplacementStdPrice),
-        style: Object.assign({}, interni, categoria),
-        width: 108
-      }), _jsx(_CardItemDetail2.default, {
-        columnGroup: o.CARD_REPLACEMENT,
-        columnID: o.CARD_REPLACEMENT_EXP_PRICE,
-        contentType: o.PRICE,
-        content: this.formatPrice(card.cardReplacementExpPrice),
-        style: Object.assign({}, interni, categoria),
-        width: 108
-      }), _jsx(_CardItemDetail2.default, {
-        columnGroup: o.CONNECTED_WALLETS,
-        columnID: o.CONNECTED_WALLETS,
-        contentType: o.PARAGRAPH,
-        content: this.getContent_CONNECTED_WALLETS(card.connectedWallets),
-        style: Object.assign({}, interni, categoria),
-        width: 160
-      }), _jsx(_CardItemDetail2.default, {
-        columnGroup: o.WALLET_LOAD_TYPES,
-        columnID: o.WALLET_LOAD_TYPES,
-        contentType: o.PARAGRAPH,
-        content: this.getContent_WALLETLOAD_TYPES(card.WalletLoad_Card_available, card.WalletLoad_BankAccount_available, card.WalletLoad_Paypal_available, card.WalletLoad_Skrill_available, card.WalletLoad_Payeer_available),
-        style: Object.assign({}, interni, categoria),
-        width: 128
-      }), _jsx(_CardItemDetail2.default, {
-        columnGroup: o.ATM_TRANSACTION_NUMBER,
-        columnID: o.ATM_TRANSACTIONNUMBER_24H,
-        contentType: o.NUMBER,
-        content: card.ATM_TransactionNumber_24h,
-        style: Object.assign({}, interni, categoria),
-        width: 84
-      }), _jsx(_CardItemDetail2.default, {
-        columnGroup: o.ATM_TRANSACTION_NUMBER,
-        columnID: o.ATM_TRANSACTIONNUMBER_MONTH,
-        contentType: o.NUMBER,
-        content: card.ATM_TransactionNumber_Month,
-        style: Object.assign({}, interni, categoria),
-        width: 84
-      }), _jsx(_CardItemDetail2.default, {
-        columnGroup: o.ATM_TRANSACTION_NUMBER,
-        columnID: o.ATM_TRANSACTIONNUMBER_YEAR,
-        contentType: o.NUMBER,
-        content: card.ATM_TransactionNumber_Year,
-        style: Object.assign({}, interni, categoria),
-        width: 84
-      }), _jsx(_CardItemDetail2.default, {
-        columnGroup: o.ATM_TRANSACTION_NUMBER,
-        columnID: o.ATM_TRANSACTIONNUMBER_LIFETIME,
-        contentType: o.NUMBER,
-        content: card.ATM_TransactionNumber_Lifetime,
-        style: Object.assign({}, interni, categoria),
-        width: 84
-      }), _jsx(_CardItemDetail2.default, {
-        columnGroup: o.PURCHASES_TOTAL_NUMBER,
-        columnID: o.PURCHASES_TOTAL_NUMBER_24H,
-        contentType: o.NUMBER,
-        content: card.Purchases_Total_number_24h,
-        style: Object.assign({}, interni, categoria),
-        width: 84
-      }), _jsx(_CardItemDetail2.default, {
-        columnGroup: o.PURCHASES_TOTAL_NUMBER,
-        columnID: o.PURCHASES_TOTAL_NUMBER_MONTH,
-        contentType: o.NUMBER,
-        content: card.Purchases_Total_number_month,
-        style: Object.assign({}, interni, categoria),
-        width: 84
-      }), _jsx(_CardItemDetail2.default, {
-        columnGroup: o.PURCHASES_TOTAL_NUMBER,
-        columnID: o.PURCHASES_TOTAL_NUMBER_YEAR,
-        contentType: o.NUMBER,
-        content: card.Purchases_Total_number_year,
-        style: Object.assign({}, interni, categoria),
-        width: 84
-      }), _jsx(_CardItemDetail2.default, {
-        columnGroup: o.PURCHASES_TOTAL_NUMBER,
-        columnID: o.PURCHASES_TOTAL_NUMBER_LIFETIME,
-        contentType: o.NUMBER,
-        content: card.Purchases_Total_number_lifetime,
-        style: Object.assign({}, interni, categoria),
-        width: 84
-      }), _jsx(_CardItemDetail2.default, {
-        columnGroup: o.ATM_WITHDRAWAL_AMOUNT,
-        columnID: o.ATM_WITHDRAWALAMOUNT_SINGLE,
-        contentType: o.PRICE,
-        content: this.formatPrice(card.ATM_WithdrawalAmount_Single),
-        style: Object.assign({}, interni, categoria),
-        width: 84
-      }), _jsx(_CardItemDetail2.default, {
-        columnGroup: o.ATM_WITHDRAWAL_AMOUNT,
-        columnID: o.ATM_WITHDRAWALAMOUNT_24H,
-        contentType: o.PRICE,
-        content: this.formatPrice(card.ATM_WithdrawalAmount_24h),
-        style: Object.assign({}, interni, categoria),
-        width: 84
-      }), _jsx(_CardItemDetail2.default, {
-        columnGroup: o.ATM_WITHDRAWAL_AMOUNT,
-        columnID: o.ATM_WITHDRAWALAMOUNT_MONTH,
-        contentType: o.PRICE,
-        content: this.formatPrice(card.ATM_WithdrawalAmount_Month),
-        style: Object.assign({}, interni, categoria),
-        width: 84
-      }), _jsx(_CardItemDetail2.default, {
-        columnGroup: o.ATM_WITHDRAWAL_AMOUNT,
-        columnID: o.ATM_WITHDRAWALAMOUNT_YEAR,
-        contentType: o.PRICE,
-        content: this.formatPrice(card.ATM_WithdrawalAmount_Year),
-        style: Object.assign({}, interni, categoria),
-        width: 84
-      }), _jsx(_CardItemDetail2.default, {
-        columnGroup: o.ATM_WITHDRAWAL_AMOUNT,
-        columnID: o.ATM_WITHDRAWALAMOUNT_LIFETIME,
-        contentType: o.PRICE,
-        content: this.formatPrice(card.ATM_WithdrawalAmount_Lifetime),
-        style: Object.assign({}, interni, categoria),
-        width: 84
-      }), _jsx(_CardItemDetail2.default, {
-        columnGroup: o.PURCHASES_TOTAL_SPENDING,
-        columnID: o.PURCHASES_TOTAL_SPENDING_SINGLE,
-        contentType: o.PRICE,
-        content: this.formatPrice(card.Purchases_Total_spending_single),
-        style: Object.assign({}, interni, categoria),
-        width: 84
-      }), _jsx(_CardItemDetail2.default, {
-        columnGroup: o.PURCHASES_TOTAL_SPENDING,
-        columnID: o.PURCHASES_TOTAL_SPENDING_24H,
-        contentType: o.PRICE,
-        content: this.formatPrice(card.Purchases_Total_spending_24h),
-        style: Object.assign({}, interni, categoria),
-        width: 84
-      }), _jsx(_CardItemDetail2.default, {
-        columnGroup: o.PURCHASES_TOTAL_SPENDING,
-        columnID: o.PURCHASES_TOTAL_SPENDING_MONTH,
-        contentType: o.PRICE,
-        content: this.formatPrice(card.Purchases_Total_spending_month),
-        style: Object.assign({}, interni, categoria),
-        width: 84
-      }), _jsx(_CardItemDetail2.default, {
-        columnGroup: o.PURCHASES_TOTAL_SPENDING,
-        columnID: o.PURCHASES_TOTAL_SPENDING_YEAR,
-        contentType: o.PRICE,
-        content: this.formatPrice(card.Purchases_Total_spending_year),
-        style: Object.assign({}, interni, categoria),
-        width: 84
-      }), _jsx(_CardItemDetail2.default, {
-        columnGroup: o.PURCHASES_TOTAL_SPENDING,
-        columnID: o.PURCHASES_TOTAL_SPENDING_LIFETIME,
-        contentType: o.PRICE,
-        content: this.formatPrice(card.Purchases_Total_spending_lifetime),
-        style: Object.assign({}, interni, categoria),
-        width: 84
-      })));
-    }
-  }, {
-    key: 'willEnter',
-    value: function willEnter() {
-      // console.log('ClosePanelButton willEnter');
-      return { height: 0, opacity: 0 };
-    }
-  }, {
-    key: 'willLeave',
-    value: function willLeave() {
-      // console.log('ClosePanelButton willLeave');
-      return { height: (0, _reactMotion.spring)(0), opacity: 0 };
-    }
-  }, {
-    key: 'getStyles',
-    value: function getStyles(isMounted) {
-      console.log(isMounted);
-      return !isMounted ? [] : [{
-        key: 'CardListItem',
-        style: { height: (0, _reactMotion.spring)(80), opacity: (0, _reactMotion.spring)(1) }
-      }];
-    }
-  }, {
-    key: 'render',
-    value: function render() {
-      var _this2 = this;
-
-      // console.log(this.props.isMounted);
-
-
-      return _jsx(_reactMotion.TransitionMotion, {
-        willEnter: this.willEnter,
-        willLeave: this.willLeave,
-        defaultStyles: [{
-          key: 'CardListItem',
-          style: { height: 0, opacity: 0 }
-        }],
-        styles: this.getStyles(this.props.isMounted)
-      }, void 0, function (items) {
-        return _jsx('div', {}, void 0, items.map(function (item) {
-          return _jsx('div', {
-            style: Object.assign({}, container, _this2.props.style, item.style)
-          }, item.key, _this2.getContent());
-        }));
-      });
-    }
-  }]);
-
-  return CardListItem;
-}(_react.Component);
+  var cardDetailContainerStyle = {
+    display: 'flex',
+    alignItems: 'stretch',
+    justifyContent: 'left',
+    // marginLeft: '150px',  //must be equal to length of cardOverview
+    height: '100%',
+    background: props.isEven ? _constants.GREY_LIGHT : '#fff'
+    // border: '1px solid blue',
+  };
+  return _jsx('div', {
+    style: ({}, container, props.style),
+    onClick: props.onClick
+  }, card.cardID, _react2.default.createElement(_CardItemOverview2.default, _extends({
+    cardIssuer: card.cardIssuer,
+    spendingCurrency: card.spendingCurrency,
+    cardName: card.cardName,
+    company: card.company,
+    cardType: card.cardType
+  }, props)), _jsx('div', {
+    style: cardDetailContainerStyle
+  }, void 0, _jsx(_CardItemDetail2.default, {
+    columnGroup: o.VERIFICATION_TYPE,
+    columnID: o.VERIFICATION_TYPE,
+    contentType: o.PARAGRAPH,
+    content: getContent_VERIFICATION_TYPE(card),
+    style: Object.assign({}, interni, categoria),
+    width: 128
+  }), _jsx(_CardItemDetail2.default, {
+    columnGroup: o.CARD_ISSUANCE_PRICE,
+    columnID: o.CARD_ISSUANCE_PRICE,
+    contentType: o.PRICE,
+    content: formatPrice(card.cardIssuancePrice),
+    style: Object.assign({}, interni, categoria),
+    width: 128
+  }), _jsx(_CardItemDetail2.default, {
+    columnGroup: o.ANNUAL_COST,
+    columnID: o.ANNUAL_COST,
+    contentType: o.PRICE,
+    content: formatPrice(card.annualFee),
+    style: Object.assign({}, interni, categoria),
+    width: 144
+  }), _jsx(_CardItemDetail2.default, {
+    columnGroup: o.CURRENCY_CONVERSION,
+    columnID: o.CURRENCY_CONVERSION,
+    contentType: o.PERCENTAGE,
+    content: formatPercentage(card.currencyConversion),
+    style: Object.assign({}, interni, categoria),
+    width: 168
+  }), _jsx(_CardItemDetail2.default, {
+    columnGroup: o.ATM_WITHDRAWAL_FEE,
+    columnID: o.ATM_DOMESTIC_WIDTHRAWAL_FEE,
+    contentType: o.PRICE,
+    content: formatPrice(card.ATM_Domestic_Widthrawal_Fee),
+    style: Object.assign({}, interni, categoria),
+    width: 136
+  }), _jsx(_CardItemDetail2.default, {
+    columnGroup: o.ATM_WITHDRAWAL_FEE,
+    columnID: o.ATM_INTERNATIONAL_WITHDRAWAL_FEE,
+    contentType: o.PRICE,
+    content: formatPrice(card.ATM_International_Withdrawal_Fee),
+    style: Object.assign({}, interni, categoria),
+    width: 136
+  }), _jsx(_CardItemDetail2.default, {
+    columnGroup: o.CASH_BACK,
+    columnID: o.CASH_BACK,
+    contentType: o.PERCENTAGE,
+    content: formatPercentage(card.cashBack),
+    style: Object.assign({}, interni, categoria),
+    width: 136
+  }), _jsx(_CardItemDetail2.default, {
+    columnGroup: o.PIN_CHANGE,
+    columnID: o.PIN_CHANGE,
+    contentType: o.PRICE,
+    content: formatPrice(card.pinChange),
+    style: Object.assign({}, interni, categoria),
+    width: 136
+  }), _jsx(_CardItemDetail2.default, {
+    columnGroup: o.APPS,
+    columnID: o.APPS,
+    contentType: o.PARAGRAPH,
+    content: getContent_APP(card),
+    style: Object.assign({}, interni, categoria),
+    width: 136
+  }), _jsx(_CardItemDetail2.default, {
+    columnGroup: o.TWO_FACTORS_AUTH,
+    columnID: o.TWO_FACTORS_AUTH,
+    contentType: o.TICK,
+    content: formatTick(card.twoFactorsAuth),
+    style: Object.assign({}, interni, categoria),
+    width: 136
+  }), _jsx(_CardItemDetail2.default, {
+    columnGroup: o.CARD_DELIVERY_STANDARD,
+    columnID: o.CARD_DELIVERY_STD_TIME,
+    contentType: o.TIME,
+    content: formatTimeSpan(card.cardDeliveryStdTimeMin, card.cardDeliveryStdTimeMax),
+    style: Object.assign({}, interni, categoria),
+    width: 84
+  }), _jsx(_CardItemDetail2.default, {
+    columnGroup: o.CARD_DELIVERY_STANDARD,
+    columnID: o.CARD_DELIVERY_STD_PRICE,
+    contentType: o.PRICE,
+    content: formatPrice(card.cardDeliveryStdPrice),
+    style: Object.assign({}, interni, categoria),
+    width: 84
+  }), _jsx(_CardItemDetail2.default, {
+    columnGroup: o.CARD_DELIVERY_EXPRESS,
+    columnID: o.CARD_DELIVERY_EXP_TIME,
+    contentType: o.TIME,
+    content: formatTimeSpan(card.cardDeliveryExpTimeMin, card.cardDeliveryExpTimeMax),
+    style: Object.assign({}, interni, categoria),
+    width: 84
+  }), _jsx(_CardItemDetail2.default, {
+    columnGroup: o.CARD_DELIVERY_EXPRESS,
+    columnID: o.CARD_DELIVERY_EXP_PRICE,
+    contentType: o.PRICE,
+    content: formatPrice(card.cardDeliveryExpPrice),
+    style: Object.assign({}, interni, categoria),
+    width: 84
+  }), _jsx(_CardItemDetail2.default, {
+    columnGroup: o.CARD_REPLACEMENT,
+    columnID: o.CARD_REPLACEMENT_STD_PRICE,
+    contentType: o.PRICE,
+    content: formatPrice(card.cardReplacementStdPrice),
+    style: Object.assign({}, interni, categoria),
+    width: 108
+  }), _jsx(_CardItemDetail2.default, {
+    columnGroup: o.CARD_REPLACEMENT,
+    columnID: o.CARD_REPLACEMENT_EXP_PRICE,
+    contentType: o.PRICE,
+    content: formatPrice(card.cardReplacementExpPrice),
+    style: Object.assign({}, interni, categoria),
+    width: 108
+  }), _jsx(_CardItemDetail2.default, {
+    columnGroup: o.CONNECTED_WALLETS,
+    columnID: o.CONNECTED_WALLETS,
+    contentType: o.PARAGRAPH,
+    content: getContent_CONNECTED_WALLETS(card.connectedWallets),
+    style: Object.assign({}, interni, categoria),
+    width: 160
+  }), _jsx(_CardItemDetail2.default, {
+    columnGroup: o.WALLET_LOAD_TYPES,
+    columnID: o.WALLET_LOAD_TYPES,
+    contentType: o.PARAGRAPH,
+    content: getContent_WALLETLOAD_TYPES(card.WalletLoad_Card_available, card.WalletLoad_BankAccount_available, card.WalletLoad_Paypal_available, card.WalletLoad_Skrill_available, card.WalletLoad_Payeer_available),
+    style: Object.assign({}, interni, categoria),
+    width: 128
+  }), _jsx(_CardItemDetail2.default, {
+    columnGroup: o.ATM_TRANSACTION_NUMBER,
+    columnID: o.ATM_TRANSACTIONNUMBER_24H,
+    contentType: o.NUMBER,
+    content: card.ATM_TransactionNumber_24h,
+    style: Object.assign({}, interni, categoria),
+    width: 84
+  }), _jsx(_CardItemDetail2.default, {
+    columnGroup: o.ATM_TRANSACTION_NUMBER,
+    columnID: o.ATM_TRANSACTIONNUMBER_MONTH,
+    contentType: o.NUMBER,
+    content: card.ATM_TransactionNumber_Month,
+    style: Object.assign({}, interni, categoria),
+    width: 84
+  }), _jsx(_CardItemDetail2.default, {
+    columnGroup: o.ATM_TRANSACTION_NUMBER,
+    columnID: o.ATM_TRANSACTIONNUMBER_YEAR,
+    contentType: o.NUMBER,
+    content: card.ATM_TransactionNumber_Year,
+    style: Object.assign({}, interni, categoria),
+    width: 84
+  }), _jsx(_CardItemDetail2.default, {
+    columnGroup: o.ATM_TRANSACTION_NUMBER,
+    columnID: o.ATM_TRANSACTIONNUMBER_LIFETIME,
+    contentType: o.NUMBER,
+    content: card.ATM_TransactionNumber_Lifetime,
+    style: Object.assign({}, interni, categoria),
+    width: 84
+  }), _jsx(_CardItemDetail2.default, {
+    columnGroup: o.PURCHASES_TOTAL_NUMBER,
+    columnID: o.PURCHASES_TOTAL_NUMBER_24H,
+    contentType: o.NUMBER,
+    content: card.Purchases_Total_number_24h,
+    style: Object.assign({}, interni, categoria),
+    width: 84
+  }), _jsx(_CardItemDetail2.default, {
+    columnGroup: o.PURCHASES_TOTAL_NUMBER,
+    columnID: o.PURCHASES_TOTAL_NUMBER_MONTH,
+    contentType: o.NUMBER,
+    content: card.Purchases_Total_number_month,
+    style: Object.assign({}, interni, categoria),
+    width: 84
+  }), _jsx(_CardItemDetail2.default, {
+    columnGroup: o.PURCHASES_TOTAL_NUMBER,
+    columnID: o.PURCHASES_TOTAL_NUMBER_YEAR,
+    contentType: o.NUMBER,
+    content: card.Purchases_Total_number_year,
+    style: Object.assign({}, interni, categoria),
+    width: 84
+  }), _jsx(_CardItemDetail2.default, {
+    columnGroup: o.PURCHASES_TOTAL_NUMBER,
+    columnID: o.PURCHASES_TOTAL_NUMBER_LIFETIME,
+    contentType: o.NUMBER,
+    content: card.Purchases_Total_number_lifetime,
+    style: Object.assign({}, interni, categoria),
+    width: 84
+  }), _jsx(_CardItemDetail2.default, {
+    columnGroup: o.ATM_WITHDRAWAL_AMOUNT,
+    columnID: o.ATM_WITHDRAWALAMOUNT_SINGLE,
+    contentType: o.PRICE,
+    content: formatPrice(card.ATM_WithdrawalAmount_Single),
+    style: Object.assign({}, interni, categoria),
+    width: 84
+  }), _jsx(_CardItemDetail2.default, {
+    columnGroup: o.ATM_WITHDRAWAL_AMOUNT,
+    columnID: o.ATM_WITHDRAWALAMOUNT_24H,
+    contentType: o.PRICE,
+    content: formatPrice(card.ATM_WithdrawalAmount_24h),
+    style: Object.assign({}, interni, categoria),
+    width: 84
+  }), _jsx(_CardItemDetail2.default, {
+    columnGroup: o.ATM_WITHDRAWAL_AMOUNT,
+    columnID: o.ATM_WITHDRAWALAMOUNT_MONTH,
+    contentType: o.PRICE,
+    content: formatPrice(card.ATM_WithdrawalAmount_Month),
+    style: Object.assign({}, interni, categoria),
+    width: 84
+  }), _jsx(_CardItemDetail2.default, {
+    columnGroup: o.ATM_WITHDRAWAL_AMOUNT,
+    columnID: o.ATM_WITHDRAWALAMOUNT_YEAR,
+    contentType: o.PRICE,
+    content: formatPrice(card.ATM_WithdrawalAmount_Year),
+    style: Object.assign({}, interni, categoria),
+    width: 84
+  }), _jsx(_CardItemDetail2.default, {
+    columnGroup: o.ATM_WITHDRAWAL_AMOUNT,
+    columnID: o.ATM_WITHDRAWALAMOUNT_LIFETIME,
+    contentType: o.PRICE,
+    content: formatPrice(card.ATM_WithdrawalAmount_Lifetime),
+    style: Object.assign({}, interni, categoria),
+    width: 84
+  }), _jsx(_CardItemDetail2.default, {
+    columnGroup: o.PURCHASES_TOTAL_SPENDING,
+    columnID: o.PURCHASES_TOTAL_SPENDING_SINGLE,
+    contentType: o.PRICE,
+    content: formatPrice(card.Purchases_Total_spending_single),
+    style: Object.assign({}, interni, categoria),
+    width: 84
+  }), _jsx(_CardItemDetail2.default, {
+    columnGroup: o.PURCHASES_TOTAL_SPENDING,
+    columnID: o.PURCHASES_TOTAL_SPENDING_24H,
+    contentType: o.PRICE,
+    content: formatPrice(card.Purchases_Total_spending_24h),
+    style: Object.assign({}, interni, categoria),
+    width: 84
+  }), _jsx(_CardItemDetail2.default, {
+    columnGroup: o.PURCHASES_TOTAL_SPENDING,
+    columnID: o.PURCHASES_TOTAL_SPENDING_MONTH,
+    contentType: o.PRICE,
+    content: formatPrice(card.Purchases_Total_spending_month),
+    style: Object.assign({}, interni, categoria),
+    width: 84
+  }), _jsx(_CardItemDetail2.default, {
+    columnGroup: o.PURCHASES_TOTAL_SPENDING,
+    columnID: o.PURCHASES_TOTAL_SPENDING_YEAR,
+    contentType: o.PRICE,
+    content: formatPrice(card.Purchases_Total_spending_year),
+    style: Object.assign({}, interni, categoria),
+    width: 84
+  }), _jsx(_CardItemDetail2.default, {
+    columnGroup: o.PURCHASES_TOTAL_SPENDING,
+    columnID: o.PURCHASES_TOTAL_SPENDING_LIFETIME,
+    contentType: o.PRICE,
+    content: formatPrice(card.Purchases_Total_spending_lifetime),
+    style: Object.assign({}, interni, categoria),
+    width: 84
+  })));
+};
 
 var container = {
   display: 'flex',
@@ -38618,30 +38586,80 @@ var container = {
   // overflow: 'hidden',
   // cursor: 'pointer',
 };
-
 var interni = {};
-
+var categoria = {};
 var titolo = {
   fontSize: '18px',
   color: '#333',
   fontWeight: 'bold'
-};
 
-var categoria = {};
-
-var pagine = {};
-
-function mapStateToProps(state) {
+  // Whatever will return will show up as props inside of cardList.
+};function mapStateToProps(state) {
   return {
-    visibleCards: state.mainReducer.visibleCards
+    cardList: state.mainReducer.cardList
   };
 }
 // Promote cardList from a Component to a container. It needs to know about // new dispatch method, selectBook. Make it available as props.
 exports.default = (0, _reactRedux.connect)(mapStateToProps)(CardListItem);
+// export default CardListItem
 
 
 CardListItem.propTypes = {
-  isEven: _propTypes2.default.bool.isRequired
+  isEven: _propTypes2.default.bool.isRequired,
+  style: _propTypes2.default.object
+
+  // <CardItemDetail
+  // columnID = {o.SPENDING_CURRENCY}
+  // contentType = {o.WORD}
+  // content={card.spendingCurrency}
+  // style={Object.assign({}, interni, categoria)}
+  // />
+
+
+  // <CardItemDetail
+  // cellClass={'cardIssuer'}
+  // columnID =
+  // contentType={WORD}
+  // content={props.cardIssuer}
+  // visible={true}
+  // style={Object.assign({}, interni, pagine)}
+  // />
+  // <CardItemDetail
+  // cellClass={'pages'}
+  // columnID =
+  // contentType={WORD}
+  // content={props.pages}
+  // visible={true}
+  // style={Object.assign({}, interni, pagine)}
+  // />
+  // <CardItemDetail
+  // cellClass={'category'}
+  // columnID =
+  // contentType={WORD}
+  // content={props.category}
+  // visible={true}
+  // style={Object.assign({}, interni, categoria)}
+  // />
+  // <CardItemDetail
+  // cellClass={'price'}
+  // contentType={PRICE}
+  // content={props.price}
+  // visible={true}
+  // style={Object.assign({}, interni, pagine)}
+  // />
+  // <div style={container} key ={props.title} onClick = { props.onClick}
+  // >
+  //   <div style={Object.assign({}, interni, titolo)}>
+  //     {props.title}
+  //   </div>
+  //   <div style={Object.assign({}, interni, categoria)}>
+  //     {props.category}
+  //   </div>
+  //   <div style={Object.assign({}, interni, pagine)}>
+  //     {props.pages}
+  //   </div>
+  // </div>
+
 };
 
 /***/ }),
@@ -38667,7 +38685,7 @@ var _propTypes = __webpack_require__(5);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _reactRedux = __webpack_require__(10);
+var _reactRedux = __webpack_require__(9);
 
 var _constants = __webpack_require__(3);
 
@@ -38823,7 +38841,7 @@ var _propTypes = __webpack_require__(5);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _reactMotion = __webpack_require__(19);
+var _reactMotion = __webpack_require__(18);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -39112,9 +39130,9 @@ var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactRedux = __webpack_require__(10);
+var _reactRedux = __webpack_require__(9);
 
-var _redux = __webpack_require__(9);
+var _redux = __webpack_require__(10);
 
 var _index = __webpack_require__(13);
 
@@ -39205,7 +39223,7 @@ var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactRedux = __webpack_require__(10);
+var _reactRedux = __webpack_require__(9);
 
 var _HiddenColumnsItem = __webpack_require__(147);
 
@@ -39223,13 +39241,13 @@ var _constants = __webpack_require__(3);
 
 var _index = __webpack_require__(13);
 
-var _redux = __webpack_require__(9);
+var _redux = __webpack_require__(10);
 
-var _reactMotion = __webpack_require__(19);
+var _reactMotion = __webpack_require__(18);
 
 var _animations = __webpack_require__(38);
 
-var _styles = __webpack_require__(18);
+var _styles = __webpack_require__(19);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -39440,7 +39458,7 @@ var _jsx = function () { var REACT_ELEMENT_TYPE = typeof Symbol === "function" &
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _reactMotion = __webpack_require__(19);
+var _reactMotion = __webpack_require__(18);
 
 var _react = __webpack_require__(1);
 
@@ -39582,7 +39600,7 @@ var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactMotion = __webpack_require__(19);
+var _reactMotion = __webpack_require__(18);
 
 var _TransitionMotionTest = __webpack_require__(149);
 
