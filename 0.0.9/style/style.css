@@ -14,9 +14,6 @@
 
 .CardItemOverview {
   position: -webkit-sticky;
-  position: -moz-sticky;
-  position: -ms-sticky;
-  position: -o-sticky;
   position: sticky;
   left: 0px;
   z-index: 1;
@@ -24,9 +21,6 @@
 
 .nav {
   position: -webkit-sticky;
-  position: -moz-sticky;
-  position: -ms-sticky;
-  position: -o-sticky;
   position: sticky;
   left: 0px;
 }
@@ -39,18 +33,8 @@
 
 .sortBar {
   position: -webkit-sticky;
-  position: -moz-sticky;
-  position: -ms-sticky;
-  position: -o-sticky;
   position: sticky;
   top: 0;
-  z-index: 4;
-}
-
-.scrollContainer {
-  width: 100%;
-  height: 100vh;
-  overflow: scroll;
 }
 
 a {
